@@ -1,0 +1,32 @@
+{
+  "name": "nativescript-google-tagmanager",
+  "version": "1.0.0",
+  "description": "Google tag manager integration for nativescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cenkingunlugu/nativescript-google-tagmanager.git"
+  },
+  "keywords": [
+    "NativeScript",
+    "Google",
+    "Tag",
+    "Manager",
+    "GTM",
+    "Google",
+    "Tag",
+    "Manager",
+    "cenkingunlugu",
+    "iOS",
+    "Android"
+  ],
+  "author": "Cenk Ebret",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/cenkingunlugu/nativescript-google-tagmanager/issues"
+  },
+  "homepage": "https://github.com/cenkingunlugu/nativescript-google-tagmanager#readme"
+}
