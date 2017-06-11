@@ -1,0 +1,33 @@
+android {
+  productFlavors {
+    "nativescript-google-tagmanager" {
+      dimension "nativescript-google-tagmanager"
+    }
+  }
+}
+
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.0'
+        classpath "com.google.gms:google-services:3.0.0"
+    }
+}
+
+dependencies {
+    // [START gms_compile]
+    def googlePlayServicesVersion = project.hasProperty('googlePlayServicesVersion') ? project.googlePlayServicesVersion : '+'
+	compile "com.google.android.gms:play-services-analytics:$googlePlayServicesVersion"
+    // [END gms_compile]
+}
+
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
