@@ -9,6 +9,8 @@ NativeScript adheres to the CommonJS specification for dealing with
 JavaScript modules. The CommonJS require() function is how you import
 JavaScript modules defined in other files.
 */ 
+var googleTagManager = require("nativescript-google-tagmanager");
+
 var createViewModel = require("./main-view-model").createViewModel;
 
 function onNavigatingTo(args) {
@@ -30,6 +32,10 @@ function onNavigatingTo(args) {
     https://docs.nativescript.org/core-concepts/data-binding.
     */
     page.bindingContext = createViewModel();
+    googleTagManager.log({
+        "event": "screenVisible", 
+        "screenName": "tns-demo"
+    });
 }
 
 /*

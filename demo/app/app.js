@@ -27,7 +27,7 @@ if (application.ios) {
     application.ios.delegate = appDelegate;
 }else{
     //ANDROID
-    application.on(application.launchEvent, function (args) {
+    application.on("launch", args => {
         initTagManager(); //Module Code to initalize
     });
 
