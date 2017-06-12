@@ -6,6 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "nativescript": {
+    "platforms": {
+      "android": "3.0.1",
+      "ios": "3.0.1"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cenkingunlugu/nativescript-google-tagmanager.git"

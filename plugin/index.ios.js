@@ -1,10 +1,10 @@
 var application = require("application");
 var availableLoggingTypes = {
-  "verbose": kTAGLoggerLogLevelVerbose,
-  "debug": kTAGLoggerLogLevelDebug,
-  "info": kTAGLoggerLogLevelInfo,
-  "error": kTAGLoggerLogLevelError,
-  "none": kTAGLoggerLogLevelNone
+  "verbose": "kTAGLoggerLogLevelVerbose",
+  "debug": "kTAGLoggerLogLevelDebug",
+  "info": "kTAGLoggerLogLevelInfo",
+  "error": "kTAGLoggerLogLevelError",
+  "none": "kTAGLoggerLogLevelNone"
 };
 
 var tagLayer = null;
