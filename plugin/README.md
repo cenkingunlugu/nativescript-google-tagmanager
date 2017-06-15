@@ -5,6 +5,29 @@
 tns plugin add nativescript-google-tagmanager 
 ```
 
+## Prequisities ##
+
+Download your container from Google Tag Manager page as binary.
+
+### IOS ###
+
+In your app, copy the binary file into the folder:
+
+/App_Resources/IOS
+
+### Android ###
+
+In your app, copy the binary file into the folder:
+
+/App_Resources/Android/raw
+
+note: if there is no raw folder inside Android folder, create it.
+note2: change the name of the binary file as lowercase letters, and replace - with _ (this is needed because of androids file name restrictions).
+
+####For example:
+
+If your Binary file name is GTM-AAA11B replace its name as: gtm_aaa11b
+
 ## Initalize the tracker in app.js ##
 ### PLAIN JS ###
 ``` js
