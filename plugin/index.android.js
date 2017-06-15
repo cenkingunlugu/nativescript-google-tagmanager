@@ -1,4 +1,6 @@
-var application = require("application");
+const application = require("application");
+const utils = require("utils/utils");
+
 var availableLoggingTypes = {
   "verbose": '',
   "debug": '',
@@ -17,10 +19,13 @@ exports.initalize = function (config) {
         if (config.logLevel && !!availableLoggingTypes[config.logLevel]) {
            tagManager.setVerboseLoggingEnabled(true);
         }
-        
+
+        var context = application.android.context;
+        var res = context.getResources().getIdentifier(config.containerId.replace('-', '_').toLowerCase(), "raw", context.getPackageName());
+
         var pending = tagManager.loadContainerPreferNonDefault(
          config.containerId,
-         android.R.raw[config.containerId]);
+         res);
 
         var containerHolder = pending.await(0, java.util.concurrent.TimeUnit.SECONDS);
         if (containerHolder.status != com.google.android.gms.common.api.Status.RESULT_SUCCESS) {
